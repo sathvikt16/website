@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>FarmEasy | A new way to buy and sell farm products </title>
   <style media="screen">
+    html {
+      scroll-behavior: smooth;
+    }
+
     /* css for sign-in and log-in buttons */
     .button--small {
       padding: 5px 10px;
@@ -30,7 +34,6 @@
       display: inline-flex;
       overflow: hidden;
       padding: 12px 18px;
-      position: relative;
       -webkit-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       z-index: 0;
@@ -51,12 +54,11 @@
       height: 0;
       left: 50%;
       padding-bottom: 0%;
-      position: absolute;
       top: 50%;
-      -webkit-transform: translate(-50%, -50%);
+      /* -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       -webkit-transition: all 200ms cubic-bezier(0.06, 0.43, 0.98, 0.09);
-      transition: all 200ms cubic-bezier(0.06, 0.43, 0.98, 0.09);
+      transition: all 200ms cubic-bezier(0.06, 0.43, 0.98, 0.09); */
       width: 0%;
       z-index: -1;
     }
@@ -122,6 +124,14 @@
     .btn {
       border-radius: 50px;
     }
+    .ovalbanana{
+      width:100%;
+      height:50px;
+      border-radius: 50% / 100% 100% 0 0;
+      background-color: white;
+      position: absolute;
+      top:565px;
+    }
   </style>
 </head>
 
@@ -136,16 +146,9 @@
               <img src="https://cdn.iconscout.com/icon/free/png-256/farmer-2204210-1838555.png" alt="brand_image" width="30" height="29" class="d-inline-block align-top" style="margin-top:3px;">
               FarmEasy
             </a>
-            <button class="navbar-toggler btn " style="background-color : #EAF6F6;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button class="navbar-toggler btn " style="background-color : #EAF6F6; border-radius:5px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
               <i class="fa-solid fa-bars"></i>
-              <span class="navbar-toggler-icon" style="display: none ;">
-                <svg class="svg-inline--fa fa-times fa-w-11 fa-fw m-0" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
-                  <path fill="currentColor"
-                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-                  </path>
-                </svg>
-              </span>
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="navbar-nav navbar-nav-scroll mr-auto " style="--bs-scroll-height: 150px;">
@@ -153,12 +156,12 @@
                   <input class="form-control mr-sm-2" type="search" placeholder=" Find all your wants here" aria-label="Search">
                   <button class="btn btn-success roundd my-2 my-sm-0" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    &nbsp;Search&nbsp;&nbsp;&nbsp;
+                    &nbsp;Search&nbsp;
                   </button>
                 </form>
                 <li class="nav-item">
                   <button type="button" style="border : none;" class="btn btn-outline-warning">
-                    <a class="nav-link " style="padding: 0px; font-family: 'Bree Serif', serif; font-size: large; color:beige;" aria-current="page" href="#">About Us</a>
+                    <a class="nav-link " style="padding: 0px; font-family: 'Bree Serif', serif; font-size: large; color:beige;" aria-current="page" href="#about-us">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                   <button type="button" style="border : none;" class="btn btn-outline-warning">
@@ -208,6 +211,24 @@
         </div>
       </div>
     </section>
+    <section id="about-us">
+      <div class="ovalbanana">
+      </div>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      <center><h1>How's This</h1></center>
+      
+
+
+    </section>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -218,3 +239,4 @@
 </html>
 <!-- &nbsp; -->
 <!-- box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%); -->
+
